@@ -14,7 +14,6 @@ html {
 body {
     font-family: Poppins, sans-serif;
     font-weight: normal;
-    background-color: #1a1a2e;
     color: white;
 }
 
@@ -32,7 +31,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #16213E;
+    background-color: #1A1A2E;
 }
 
 header h2 {
@@ -57,6 +56,7 @@ header h2 {
     height: 1px;
     width: 30px;
     background-color: #ffffff;
+    color: #fff;
 }
 
 .hamburger .bar::before, .bar::after {
@@ -65,6 +65,7 @@ header h2 {
     height: inherit;
     width: inherit;
     background-color: #ffffff;
+    color: #fff;
     display: block;
 }
 
@@ -95,3 +96,14 @@ nav a {
     color: white;
 }
 
+/**************************/
+/* Section 2: Main Banner */
+/**************************/
+.banner {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://cdn.discordapp.com/attachments/769653330200100915/788503059235602432/dark-mountain_scene.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
