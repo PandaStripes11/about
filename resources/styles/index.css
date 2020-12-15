@@ -19,5 +19,79 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
+    font-weight: 300;
 }
+
+/*********************/
+/* Section 1: Header */
+/*********************/
+header {
+    width: 100vw;
+    height: 90px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #16213E;
+}
+
+header h2 {
+    margin: 0 40px;
+}
+
+/* Navigation and Links */
+.hamburger {
+    cursor: pointer;
+    float: right;
+    position: relative;
+    right: 40px;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger .bar {
+    border-radius: 4px;
+    height: 1px;
+    width: 30px;
+    background-color: #ffffff;
+}
+
+.hamburger .bar::before, .bar::after {
+    border-radius: 4px;
+    content: "";
+    height: inherit;
+    width: inherit;
+    background-color: #ffffff;
+    display: block;
+}
+
+.hamburger .bar::before {
+    transform: translateY(10px)
+}
+.hamburger .bar::after {
+    transform: translateY(-10px)
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin-right: 70px;
+}
+
+nav li {
+    display: inline;
+    margin: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
