@@ -15,6 +15,7 @@ body {
     font-family: Poppins, sans-serif;
     font-weight: normal;
     color: white;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,14 +32,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1A1A2E;
+    background-color: #4b4b4b;
+    box-shadow: 0px 5px 10px 3px rgba(30, 30, 30, 0.5);
+    z-index: 5;
 }
 
 header h2 {
     margin: 0 40px;
 }
 
-/* Navigation and Links */
+/* Hamburger Menu */
 .hamburger {
     cursor: pointer;
     float: right;
@@ -49,6 +52,7 @@ header h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s ease;
 }
 
 .hamburger .bar {
@@ -57,6 +61,7 @@ header h2 {
     width: 30px;
     background-color: #ffffff;
     color: #fff;
+    transition: all 0.5s ease;
 }
 
 .hamburger .bar::before, .bar::after {
@@ -67,6 +72,7 @@ header h2 {
     background-color: #ffffff;
     color: #fff;
     display: block;
+    transition: all 0.5s ease;
 }
 
 .hamburger .bar::before {
@@ -76,6 +82,21 @@ header h2 {
     transform: translateY(-10px)
 }
 
+body.active .hamburger {
+    transform: rotate(360deg)
+}
+body.active .hamburger .bar {
+    background-color: transparent;
+}
+
+body.active .hamburger .bar::before {
+    transform: rotate(45deg)
+}
+body.active .hamburger .bar::after {
+    transform: rotate(-45deg)
+}
+
+/* Navigation Links */
 nav {
     display: flex;
     align-items: center;
@@ -106,4 +127,71 @@ nav a {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.banner h2, .banner p, .banner img {
+    z-index: 2;
+}
+
+.title {
+    width: 20%;
+    height: 20%;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: gray;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+/*********************/
+/* Section 3: Footer */
+/*********************/
+footer {
+    height: 35vh;
+    width: 100vw;
+    background-color: #4b4b4b;
+    box-shadow: inset 0px 5px 10px 2px rgba(50, 50, 50, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3 {
+    font-weight: 400;
+}
+
+
+footer .footer-container {
+    width: 40vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    width: 15vw;
+}
+
+footer li {
+    font-weight: 200;
+}
+
+footer p {
+    position: absolute;
+    bottom: -34vh;
+    left: 5px;
+    float: left;
+    font-size: 0.65rem;
+}
+
+
