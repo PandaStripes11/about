@@ -53,6 +53,7 @@ header h2 {
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease;
+    z-index: 10;
 }
 
 .hamburger .bar {
@@ -134,8 +135,10 @@ nav a {
     z-index: -1;
 }
 
-.banner h2, .banner p, .banner img {
-    z-index: 2;
+.text img {
+    width: 175px;
+    height: 175px;
+    border-radius: 100%;
 }
 
 .title {
@@ -151,7 +154,7 @@ nav a {
 
 .text {
     position: relative;
-    bottom: 20px;
+    bottom: 100px;
     left: 10px;
     text-align: center;
 }
