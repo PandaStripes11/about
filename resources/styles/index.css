@@ -229,8 +229,49 @@ footer div {
     width: 15vw;
 }
 
+footer ul {
+    list-style: none;
+}
+
+footer ul span {
+    font-weight: 300;
+}
+
 footer li {
     font-weight: 200;
+}
+
+.github {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    background-size: cover;
+    border-radius: 100%;
+    object-fit: cover;
+    position: absolute;
+    right: 44.5vw;
+}
+
+.discord {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    background-size: cover;
+    border-radius: 100%;
+    object-fit: cover;
+    position: absolute;
+    right: 44.5vw;
+}
+
+.gmail {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    background-size: cover;
+    border-radius: 100%;
+    object-fit: cover;
+    position: absolute;
+    right: 69.5vw;
 }
 
 footer p {
