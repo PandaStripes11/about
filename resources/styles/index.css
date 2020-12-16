@@ -104,7 +104,7 @@ nav {
     align-items: center;
 }
 
-nav ul {
+nav .main-links {
     list-style: none;
     margin-right: 70px;
 }
@@ -117,6 +117,69 @@ nav li {
 nav a {
     text-decoration: none;
     color: white;
+}
+
+/* Menu */
+.menu {
+    position: absolute;
+    width: 25vw;
+    height: 100vh;
+    right: -25vw;
+    top: 0;
+    transition: all 0.4s ease;
+    z-index: 6;
+    background-color: #162447;
+    border-left: 1px solid #1f4068;
+    box-shadow: -5px 0px 10px 3px rgba(30, 30, 30, 0.5);
+}
+
+.menu hr {
+    width: 20vw;
+    color: white;
+    border: none;
+    background-color: white;
+    height: 1px;
+    border-radius: 2px;
+}
+
+.menu > ul {
+    width: 25vw;
+    margin: 0 0.75em;
+}
+
+.menu li {
+    display: block;
+    width: 25vw;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+    padding: 0px 8px;
+}
+.menu li::before {
+    content: "\2022";
+    margin-left: -1em;
+    color: white;
+    display: inline-block;
+    width: 1em;
+    transition: all 0.2s ease;
+}
+.menu .projects::before {
+    content: ">";
+    margin-left: -1em;
+    color: white;
+    display: inline-block;
+    width: 1em;
+    transition: all 0.2s ease;
+}
+
+.menu li:hover {
+    background-color:#1f4068;
+}
+.menu .projects:hover {
+    background-color: transparent;
+}
+
+body.active .menu {
+    right: 0;
 }
 
 /**************************/
