@@ -159,6 +159,37 @@ nav a {
     text-align: center;
 }
 
+.description::after {
+    content: "";
+    margin-left: 2px;
+    width: 1px;
+    height: 16px;
+    background-color: white;
+    display: inline-block;
+    animation: blink 0.7s ease 0s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 .overlay {
     width: 100vw;
     height: 100vh;
