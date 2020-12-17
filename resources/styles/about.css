@@ -186,6 +186,11 @@ body.active .menu {
 /*******************/
 /* Section 2: Main */
 /*******************/
+.container {
+    width: 100vw;
+    margin: 0px 15vw;
+    padding: 25px 0px;
+}
 
 /* Banner */
 .banner {
@@ -229,14 +234,240 @@ body.active .menu {
 .toc {
     width: 100vw;
     height: 30vh;
-    background-color: #1a1a2e;  
+    background: linear-gradient(90deg, rgba(26,26,46,1) 0%, rgba(22,36,71,1) 69%); 
+    display: flex;
+    position: relative; 
+}
+.toc h2 {
+    font-weight: bolder;
+    font-size: 1.75rem;
+}
+
+.toc ol {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+.toc li {
+    margin: 5px 0px;
+    font-size: 1.25rem;
+}
+.toc a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Animation */
+.animation {
+    height: 150px;
+    width: 200px;
+    position: absolute;
+    right: 150px;
+    top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bars {
+    width: 10px;
+    height: 150px;
+    background: white;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.7), inset -3px 0px 5px 0px rgba(0, 0, 0, 0.6)
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    box-shadow: inset 0px -2px 5px 0px rgba(0, 0, 0, 0.6), 0px 3px 5px 0px rgba(0, 0, 0, 0.7)
+}
+.circle.red {
+    background-color: crimson;
+    right: -10px;
+}
+.circle.blue {
+    background-color: cornflowerblue;
+    right: 85px;
+    bottom: 20px;
+}
+.circle.green {
+    background-color: seagreen;
+    left: -10px;
+    top: 10px;
+}
+
+/* Keyframes and Animated */
+.animation .circle.red {
+    animation: up-down 5s ease-in-out 0s infinite;
+}
+.animation .circle.blue {
+    animation: up 6s ease-in-out 0s infinite;
+}
+.animation .circle.green {
+    animation: down 4s ease-in-out 0s infinite;
+}
+.animation.hover .circle.red {
+    animation: down-up 1.5s ease-in-out 0s infinite;
+}
+@keyframes up-down {
+    0% {
+        transform: translateY(0px)
+    }
+    30% {
+        transform: translateY(50px) rotate(360deg)
+    }
+    75% {
+        transform: translateY(-50px) rotate(-360deg)
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg)
+    }
+}
+
+@keyframes down-up {
+    0% {
+        transform: rotate(0deg)
+    }
+    30% {
+        transform: translateY(-50px) rotate(360deg)
+    }
+    75% {
+        transform: translateY(50px) rotate(-360deg)
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg)
+    }
+}
+
+@keyframes up {
+    0% {
+        transform: translate(0)
+    }
+    50% {
+        transform: translateY(-80px) rotate(360deg)
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg)
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translate(0)
+    }
+    50% {
+        transform: translateY(80px) rotate(360deg)
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg)
+    }
+}
+
+/**********************/
+/* Section 3: Content */
+/*********************/
+.content {
+    width: 100vw;
+    height: 175vh;
+    background: linear-gradient(270deg, rgba(26,26,46,1) 0%, rgba(22,36,71,1) 69%);
+    box-shadow: inset 0px 6px 20px 2px rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont > section {
+    width: 75vw;
+    border-radius: 50px;
+    background-color: rgba(226, 179, 188, 0.3);
+    height: 50vh;
+    margin: 25px auto;
+    box-shadow: -2px 5px 20px 2px rgba(0, 0, 0, 0.6), inset -2px -5px 20px 2px rgba(226, 179, 188, 0.15);
+    color: lightgray;
+}
+.cont > section h3 {
+    font-weight: 700;
+    font-size: 2rem
+}
+.cont > section p {
+    font-family: "Roboto Slab"
+}
+
+/* Overview */
+.overview-text {
+    height: 100%;
+    width: 50%;
+    float: left;
+    padding: 30px;
+}
+.overview-text h3 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.overview-image {
+    background: url("https://media.discordapp.net/attachments/768855517648912406/788976604712796211/8YnAAAAAElFTkSuQmCC.png") no-repeat top center / cover;
+    width: 50%;
+    height: 100%;
+    float: right;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+/* Personal Favorites */
+.favs-text {
+    height: 100%;
+    width: 60%;
+    float: right;
+    padding: 20px;
+    padding-left: 40px;
+}
+.favs-text ul {
+    list-style-position: inside;
+    margin-left: 10px;
+}
+
+.favs-image {
+    float: left;
+    width: 40%;
+    height: 100%;
+    background: url("https://media.discordapp.net/attachments/768855517648912406/788974527299452978/AQQXlZeTujkpAAAAAElFTkSuQmCC.png") no-repeat top center / cover;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+/* Hobbies */
+.hobbies-text {
+    height: 100%;
+    width: 50%;
+    float: left;
+    padding: 30px;
+}
+.hobbies-text ul {
+    list-style-position: inside;
+    margin-left: 10px;
+}
+
+.hobbies-image {
+    width: 50%;
+    height: 100%;
+    float: right;
+    background: url("https://cdn.discordapp.com/attachments/768855517648912406/788975872051904532/000-Online-Code-Editors.png") no-repeat top center / cover;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 /*********************/
-/* Section 3: Footer */
+/* Section 4: Footer */
 /*********************/
 footer {
-    height: 35vh;
+    height: 36vh;
     width: 100vw;
     background-color: #16213e;
     box-shadow: inset 0px 5px 10px 2px rgba(0, 0, 0, .6);

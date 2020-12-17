@@ -2,7 +2,7 @@ const description = document.querySelector(".description")
 
 let j = 1
 let i = 0;
-const stringArr = ['Welcome to my website', 'Going over my middle school projects', '5 time PSIA District Winner', '2 Time Mathfax National Champion', 'Real code with version control and web dev practices']
+const stringArr = ['Welcome to my website', 'Going over my middle school projects', '5 time PSIA District Winner', '2 Time Mathfax National Champion', 'Programmed and coded by Donte Truong']
 
 function typing() {
     if (i === 0) {
