@@ -1,7 +1,7 @@
 const loader = document.querySelector(".loader")
 
 window.addEventListener("load", () => {
-    loader.style.display = "none"
+    setTimeout(function () {loader.style.display = "none"}, 500)
 })
 
 window.addEventListener("unload", () => {

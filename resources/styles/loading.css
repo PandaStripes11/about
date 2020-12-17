@@ -1,7 +1,65 @@
+
+/* Show on scroll animation */
+
+.float-up {
+    animation: float-up 0.9s ease;
+}
+.float-down {
+    animation: float-down 1s ease;
+}
+.from-right {
+    animation: from-right 1s ease;
+}
+.from-left {
+    animation: from-left 1s ease;
+}
+
+@keyframes float-up {
+    from {
+        opacity: 0;
+        transform: translateY(50px)
+    } to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+@keyframes float-down {
+    from {
+        opacity: 0;
+        transform: translateY(-50px)
+    } to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+@keyframes from-right {
+    from {
+        opacity: 0;
+        transform: translateX(100px)
+    } to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+@keyframes from-left {
+    from {
+        opacity: 0;
+        transform: translateX(-100px)
+    } to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+/* Loader animation */
+
 .loader {
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: #0f3460;

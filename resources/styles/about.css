@@ -312,8 +312,8 @@ body.active .menu {
 .animation .circle.green {
     animation: down 4s ease-in-out 0s infinite;
 }
-.animation.hover .circle.red {
-    animation: down-up 1.5s ease-in-out 0s infinite;
+.animation.hover .circle {
+    animation-play-state: paused;
 }
 @keyframes up-down {
     0% {
