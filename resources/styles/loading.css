@@ -1,0 +1,53 @@
+.loader {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0f3460;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    z-index: 20;
+}
+
+.loading {
+   width: 120px;
+}
+
+.loading img {
+    width: 120px;
+}
+
+.dots {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    height: 30px;
+    align-self: center;
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 100%;
+    animation: flicker 0.4s ease var(--i) infinite;
+    opacity: 0.5;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.5;
+    } 
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
