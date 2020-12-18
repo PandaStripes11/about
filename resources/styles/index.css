@@ -42,6 +42,26 @@ header h2 {
     margin: 0 40px;
 }
 
+/*********************/
+/* Section 1: Header */
+/*********************/
+header {
+    width: 100vw;
+    height: 90px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #16213e;
+    box-shadow: 0px 5px 10px 3px rgba(30, 30, 30, 0.5);
+    z-index: 5;
+    transition: all 0.5s ease;
+}
+
+header h2 {
+    margin: 0 40px;
+}
+
 /* Hamburger Menu */
 .hamburger {
     cursor: pointer;
@@ -129,13 +149,13 @@ nav a {
     transition: all 0.4s ease;
     z-index: 6;
     background-color: #162447;
-    border-left: 1px solid #1f4068;
+    border-left: 3px solid #0f3460;
     box-shadow: -5px 0px 10px 3px rgba(30, 30, 30, 0.5);
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
-* Projects Appear */
+/* Projects Appear */
 li > ul {
     opacity: 0;
     transition: all 0.5s ease;
@@ -178,6 +198,7 @@ li > ul {
     transform: rotate(90deg)
 }
 
+/* More Menu Formatting */
 .menu hr {
     width: 20vw;
     color: white;
@@ -205,7 +226,7 @@ li > ul {
     color: white;
     display: inline-block;
     width: 1em;
-    transition: all 0.2s ease;
+    transition: all 0.5s ease;
 }
 .menu .projects::before {
     content: ">";
@@ -213,7 +234,7 @@ li > ul {
     color: white;
     display: inline-block;
     width: 1em;
-    transition: all 0.2s ease;
+    transition: all 0.5s ease;
 }
 
 .menu li:hover {
