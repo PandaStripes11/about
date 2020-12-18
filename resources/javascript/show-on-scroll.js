@@ -45,7 +45,7 @@ window.addEventListener("load", () => {
     oneLoop(oneTimeUpElements, "float-up")
     oneLoop(oneTimeLeftElements, "from-left")
     oneLoop(oneTimeRightElements, "from-right")
-  }, 1000)
+  }, 750)
   
 })
 window.addEventListener("scroll", () => {
