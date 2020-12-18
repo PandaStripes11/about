@@ -132,6 +132,8 @@ nav a {
     background-color: #162447;
     border-left: 3px solid #0f3460;
     box-shadow: -5px 0px 10px 3px rgba(30, 30, 30, 0.5);
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .menu hr {
