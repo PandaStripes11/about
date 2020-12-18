@@ -33,4 +33,4 @@ function descriptionChanger() {
 }
 
 
-window.addEventListener("load", setTimeout(typing, 750))
+window.addEventListener("load", () => {setTimeout(typing, 750)})
