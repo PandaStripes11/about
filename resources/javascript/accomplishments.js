@@ -15,7 +15,7 @@ hamburger.addEventListener("click", () => {
 })
 
 window.addEventListener("scroll", (event) => {
-    if (window.scrollY >  0) {
+    if (window.scrollY >  500) {
         header.style.backgroundColor = "transparent"
         header.style.boxShadow = "none"
     } else {
