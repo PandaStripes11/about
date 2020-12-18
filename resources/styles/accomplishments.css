@@ -36,7 +36,7 @@ header {
     background-color: #16213e;
     box-shadow: 0px 5px 10px 3px rgba(30, 30, 30, 0.5);
     z-index: 5;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 }
 
 header h2 {
@@ -183,6 +183,79 @@ nav a {
 
 body.active .menu {
     right: 0;
+}
+
+/*********************/
+/* Section 2: Banner */
+/*********************/
+.banner-section {
+    position: relative;
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 75vh;
+    background: linear-gradient(to top, #0a2a43, transparent);
+    z-index: 3;
+    display: block;
+    opacity: 0.5;
+}
+.banner-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 75vh;
+    background: #0a2a43;
+    z-index: 3;
+    mix-blend-mode: color;
+    opacity: 0.5;
+}
+
+.banner-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100vw;
+    height: 75vh;
+}
+#mountain {
+    z-index: 1
+}
+
+.title {
+    position: relative; 
+    bottom: 10px;
+    text-align: center;
+}
+.title h1 {
+    position: relative;
+}
+.main-title {
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 5px;
+}
+.author {
+    float: right;
+    position: relative;
+}
+
+.title p {
+    font-size: 3em;
+    position: relative;
+    top: 100px;
+    font-weight: 900;
+    z-index: 4;
 }
 
 /*********************/
