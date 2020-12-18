@@ -1,9 +1,10 @@
 # Portfolio
 This is a web page about the author Donte Truong
 
-##Table of Contents##
+## Table of Contents
 1. [About](#about)
-2. [URL](#link)
+2. [Navigation](#navigation)
+3. [Link](#link)
 
 ## About
 This is a web page that goes through Donte's *Portfolio*, *Accomplishments*, and *More*
