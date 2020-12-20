@@ -10,18 +10,14 @@ const quote = document.querySelector(".title h1")
 const author = document.querySelector(".title .author")
 const description = document.querySelector(".title p")
 
+const carouselSlideOne = document.querySelector(".carousel-slide-one")
+const carouselImagesOne = document.querySelectorAll(".carousel-slide-one img")
+
 hamburger.addEventListener("click", () => {
     body.classList.toggle("active")
 })
 
-window.addEventListener("scroll", (event) => {
-    if (window.scrollY >  500) {
-        header.style.backgroundColor = "transparent"
-        header.style.boxShadow = "none"
-    } else {
-        header.style.backgroundColor = "#16213e"
-        header.style.boxShadow = "0px 5px 10px 3px rgba(30, 30, 30, 0.5)"
-    }
+window.addEventListener("scroll", () => {
 
     const value = window.scrollY
     
@@ -32,3 +28,11 @@ window.addEventListener("scroll", (event) => {
     author.style.left = `${value * 0.4}px`
     description.style.top = `${100 + (value * 0.2)}px`
 })
+
+let counter = 1
+
+setTimeout(() => {
+    let size = carouselImagesOne[counter].clientWidth
+
+    carouselSlideOne.style.transform = `translateX(${-size * counter}px)`
+}, 50)
