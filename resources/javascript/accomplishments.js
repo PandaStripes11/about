@@ -10,8 +10,9 @@ const quote = document.querySelector(".title h1")
 const author = document.querySelector(".title .author")
 const description = document.querySelector(".title p")
 
-const carouselSlideOne = document.querySelector(".carousel-slide-one")
-const carouselImagesOne = document.querySelectorAll(".carousel-slide-one img")
+const card = document.querySelector(".card")
+const cardTitle = document.querySelector(".card h2")
+const cardDesc = document.querySelector(".card p")
 
 hamburger.addEventListener("click", () => {
     body.classList.toggle("active")
@@ -29,10 +30,6 @@ window.addEventListener("scroll", () => {
     description.style.top = `${100 + (value * 0.2)}px`
 })
 
-let counter = 1
 
-setTimeout(() => {
-    let size = carouselImagesOne[counter].clientWidth
 
-    carouselSlideOne.style.transform = `translateX(${-size * counter}px)`
-}, 50)
+
