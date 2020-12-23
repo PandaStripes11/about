@@ -430,7 +430,7 @@ body.active .menu {
 .cont > section {
     width: 50vw;
     border-radius: 50px;
-    background-color: #3268a8;
+    background-color: #3267a84b;
     height: 40vh;
     margin: 25px auto;
     box-shadow: -2px 5px 20px 2px rgba(0, 0, 0, 0.6), inset -2px -5px 20px 2px rgba(226, 179, 188, 0.15);
