@@ -307,7 +307,7 @@ body.active .menu {
 /**********************/
 .content {
     width: 100vw;
-    height: 400vh;
+    height: 475vh;
     background: linear-gradient(to right, #1f4068, #16213e);
     box-shadow: inset 0px 5px 20px 2px rgba(0, 0, 0, 0.6)
 }
@@ -405,7 +405,7 @@ main h2 {
     margin: 40px auto;
     box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.75);
     color: black;
-    height: 35vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -609,8 +609,44 @@ main h2 {
 }
 
 /** Accomplishments */
+.accomplishments .carousel-slide {
+    display: flex;
+    width: 100%;
+}
+
+.accomplishments a {
+    text-decoration: none;
+    font-weight: 500;
+    color: royalblue;
+    background: linear-gradient(180deg,rgba(121, 79, 79, 0) 35%, rgba(255, 202, 210, 0.5) 35%)
+}
+.accomplishments a:hover {
+    text-decoration: underline;
+}
+
+.accomplishments h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.accomplishments p {
+    width: 60%;
+    text-align: center;
+}
 
 /* PSIA */
+.psia .carousel {
+    width: 150px;
+    margin: 25px auto;
+}
+
+.psia .carousel-slide {
+    height: 150px;
+}
+
+.psia .carousel-slide img {
+    width: 150px;
+    filter: grayscale(100%)
+}
 
 /*********************/
 /* Section 4: Footer */
