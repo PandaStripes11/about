@@ -53,10 +53,31 @@ programmingCarousel.style.transform = `translateX(${-programmingWidth * programm
 programmingCounter++;
 
 programmingCarousel.addEventListener("transitionend", () => {
-    if (programmingCounter === 5) {
-        document.querySelector(".programming h4").innerHTML = "CSS"
+    if (programmingCounter === 6) {
+        programmingTitle.innerHTML = "CSS"
         programmingDescription.innerHTML = "Cascading Style Sheets used to style web pages"
-    } 
+    } else if (programmingCounter === 7) {
+        programmingTitle.innerHTML = "Javascript"
+        programmingDescription.innerHTML = "Versatile language used for creating dynamic pages"
+    } else if (programmingCounter === 8) {
+        programmingTitle.innerHTML = "Python"
+        programmingDescription.innerHTML = "User friendly language for algorithms and data"
+    } else if (programmingCounter === 9) {
+        programmingTitle.innerHTML = "Git"
+        programmingDescription.innerHTML = "Version control system for collaboration and backups"
+    } else if (programmingCounter === 10) {
+        programmingTitle.innerHTML = "Github"
+        programmingDescription.innerHTML = "Remote repository, open source, and collaboration system"
+    } else if (programmingCounter === 11) {
+        programmingTitle.innerHTML = "NodeJS"
+        programmingDescription.innerHTML = "Javascript runtime for code out of the browser and the backend"
+    } else if (programmingCounter === 12) {
+        programmingTitle.innerHTML = "React"
+        programmingDescription.innerHTML = "JS framework for design components"
+    } else {
+        programmingTitle.innerHTML = "HTML"
+        programmingDescription.innerHTML = "Hypertext Markup Language used for structuring web pages"
+    }
 
     if (programmingImages[programmingCounter].id === "last") {
         programmingCarousel.style.transition = "none"

@@ -445,12 +445,168 @@ main h2 {
     font-weight: 500;
 }
 
+.circle-container {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.programming .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    opacity: 0.3;
+    background-color: black;
+    animation: opacity-changer 16s linear var(--i) infinite;
+}
+
+@keyframes opacity-changer {
+    0% {
+        opacity: 0.3;
+    } 3.25% {
+        opacity: 1;
+    } 9.25% {
+        opacity: 1;
+    } 12.5% {
+        opacity: 0.3;
+    } 100% {
+        opacity: 0.3;
+    }
+}
+
 /* Math */
 .skills > section.math {
     width: 60vw;
-    height: 75vh;
+    height: 95vh;
 }
 
+.math .diamond-grid {
+    display: grid;
+    height: 80%;
+    width: 80%;
+    grid-template: repeat(5, 1fr) / repeat(6, 1fr);
+    gap: 10px 15px;
+    margin: 25px auto;
+}
+.diamond-grid > div {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    filter: grayscale(50%)
+}
+.diamond-grid > div:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.6);
+    filter: none;
+}
+
+.statistics {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1;
+    background: url("https://media.discordapp.net/attachments/768855517648912406/791396265141075978/statistics.jpg") no-repeat top center / cover;
+}
+.geometry {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    background: url("https://cdn.discordapp.com/attachments/768855517648912406/791397632513802256/geometry.jpg") no-repeat top center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.geometry h4 {
+    color: rgb(175, 175, 175);
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px black;
+}
+.trigonometry {
+    grid-column: 4 / span 2;
+    grid-row: 2 / span 1;
+    background: url("https://media.discordapp.net/attachments/768855517648912406/791399775404556309/statistics_1.jpg") no-repeat top center / cover;
+}
+.calculusab {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    background: url("https://cdn.discordapp.com/attachments/768855517648912406/791431606002647040/calculus_1.png") no-repeat top center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculusab h4 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px black;
+}
+.precalc {
+    grid-column:  3 / span 2;
+    grid-row: 3 / span 1;
+    background: url("https://media.discordapp.net/attachments/768855517648912406/791465403011956746/precalc.jpg") no-repeat top center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.precalc h4 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px black;
+}
+.calculusbc {
+    grid-column: 5 / span 2;
+    grid-row: 3 / span 1;
+    background: url("https://media.discordapp.net/attachments/768855517648912406/791473742794326046/calculus_2.jpg") no-repeat top center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculusbc h4 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px black;
+}
+.algebra1 {
+    grid-column: 2 / span 2;
+    grid-row: 4 / span 1;
+    background: url("https://media.discordapp.net/attachments/768855517648912406/791475611271954482/algebra_1.jpg") no-repeat top center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.algebra1 h4 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px black;
+}
+.algebra2 {
+    grid-column: 4 / span 2;
+    grid-row: 4 / span 1;
+    background: url("https://media.discordapp.net/attachments/768855517648912406/791476130283913256/algebra_2.jpg") no-repeat top center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.algebra2 h4 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px black;
+}
+.arithmetic {
+    grid-column: 3 / span 2;
+    grid-row: 5 / span 1;
+    background: url("https://media.discordapp.net/attachments/768855517648912406/791477147374059540/arithmetic.png") no-repeat top center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arithmetic h4 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px black;
+}
 /*********************/
 /* Section 4: Footer */
 /*********************/
