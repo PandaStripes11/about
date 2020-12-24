@@ -4,8 +4,99 @@
         <meta charset="UTF-8">
         <meta name="description" content="A webpage about Donte Truong">
         <title>Portfolio | Donte Truong</title>
+        <link rel="stylesheet" type="text/css" href="resources/styles/default.css">
+        <link rel="stylesheet" type="text/css" href="resources/styles/loading.css">
+        <link rel="stylesheet" type="text/css" href="resources/styles/portfolio.css">
+        <script src="resources/javascript/default.js" async defer></script>
+        <script src="resources/javascript/loader.js" async defer></script>
+        <script src="resources/javascript/menu.js" async defer></script>
+        <script src="resources/javascript/show-on-scroll.js" async defer></script>
+        <script src="resources/javascript/portfolio.js" async defer></script>
     </head>
     <body>
-        
+        <section class="loader">
+            <div class="loading">
+                <img src="https://media.discordapp.net/attachments/768855517648912406/789288463207759912/mountain_image.png" alt="loading image">
+                <div class="dots">
+                    <div class="dot one" style="--i: 0.1s"></div>
+                    <div class="dot two" style="--i: 0.2s"></div>
+                    <div class="dot three" style="--i: 0.3s"></div>
+                </div> 
+            </div>
+        </section>
+        <header>
+            <h2>D<strong>Truong</strong></h2>
+            <nav>
+                <ul class="main-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./accomplishments.html">Accomplishments</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                </div>
+                <section class="menu">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="./accomplishments.html">Accomplishments</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li><hr>
+                        <li class="projects"><a href="#">Projects</a>
+                            <ul>
+                                <li class="projects">School Projects
+                                    <ul>
+                                        <li class="projects">Language Arts
+                                            <ul>
+                                                <li><a href="#">Literature</a></li>
+                                                <li><a href="#">English</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="projects">STEM Subjects
+                                            <ul>
+                                                <li><a href="#">Math</a></li>
+                                                <li><a href="#">Science</a></li>
+                                                <li><a href="#">Technology</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="projects">Humanities
+                                            <ul>
+                                                <li><a href="#">History</a></li>
+                                                <li><a href="#">Religion</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul> 
+                                </li>
+                                <li class="projects">Personal Projects
+                                    <ul>
+                                        <li><a href="#">Discordbots</a></li>
+                                        <li><a href="#">Word Modifier</a></li>
+                                        <li><a href="#">This Website</a></li>
+                                        <li><a href="#">Grade Calculator (Unfinished)</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
+        </header>
+        <footer>
+            <div class="footer-container">
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li id="gmail"><img class="gmail" src="https://cdn.discordapp.com/attachments/769653330200100915/788589758531239976/jLDLkf02XyP7sBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKACfwAZ5n5tiGSRGAAAAABJRU5ErkJggg.png" alt="gmail logo"><span>Gmail:</span> <i>dontetruong@gmail.com</i></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <h3>Social</h3>
+                    <ul>
+                        <li id="github"><img class="github" src="https://cdn.discordapp.com/attachments/769653330200100915/788587219002195978/github-logo.png" alt="github logo"><span>Github:</span> <i>https://github.com/PandaStripes11/</i></li>
+                        <li id="discord"><img class="discord" src="https://cdn.discordapp.com/attachments/769653330200100915/788589304309612554/125PPfXUU0899ZRoj9qCJPycIpNPQAAAABJRU5ErkJggg.png" alt="discord logo"><span>Discord: </span><i>PandaStripes11#0189</i></li>
+                        <li><span>Tag:</span> <i>@PandaStripes11</i></li>
+                    </ul>
+                </div>
+            </div>  
+        </footer>
     </body>
 </html>

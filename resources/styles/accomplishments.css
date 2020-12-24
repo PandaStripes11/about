@@ -401,11 +401,11 @@ main h2 {
 
 .skills > section, .accomplishments > section {
     background-color: white;
-    width: 80vw;
+    width: 60vw;
     margin: 40px auto;
     box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.75);
     color: black;
-    height: 50vh;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -633,20 +633,22 @@ main h2 {
     text-align: center;
 }
 
-/* PSIA */
-.psia .carousel {
+.accomplishments .carousel {
     width: 150px;
     margin: 25px auto;
 }
 
-.psia .carousel-slide {
+.accomplishments .carousel-slide {
     height: 150px;
 }
 
-.psia .carousel-slide img {
+.accomplishments .carousel-slide img {
     width: 150px;
     filter: grayscale(100%)
 }
+
+/* PSIA */
+
 
 /*********************/
 /* Section 4: Footer */
