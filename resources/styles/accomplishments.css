@@ -307,20 +307,21 @@ body.active .menu {
 /**********************/
 .content {
     width: 100vw;
-    height: 100vh;
+    height: 350vh;
     background: linear-gradient(to right, #1f4068, #16213e);
     box-shadow: inset 0px 5px 20px 2px rgba(0, 0, 0, 0.6)
 }
 
 /* Table of Contents */
 .heading {
-    height: 40vh;
+    height: 41vh;
     width: 100vw;
     background-color:#1f4068;
     display: flex;
     align-items: center;
     box-shadow: inset 0px 6px 15px 5px rgba(0, 0, 0, 0.5);
     justify-content: space-between;
+    perspective: 4000px;
 }
 
 .toc {
@@ -352,34 +353,260 @@ body.active .menu {
     font-weight: 400;
 }
 
-/* Moving Card */
+/* Animated Card */
 .card {
-    width: 30vw;
-    height: 35vh;
+    width: 20vw;
+    height: 25vh;
     background-color: white;
     margin-right: 10vw;
     border-radius: 50px;
-    box-shadow: 3px 4px 5px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 6px 5px 2px rgba(0, 0, 0, 0.6);
     overflow: hidden;
+    color: black;
+    text-align: center;
     display: flex;
-    align-items: space-around;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
 }
 
-.carousel-one {
-    height: 50%;
-    width: 100%;
+.card:hover {
+    background-color: #1a1a2e;
+    color: white;
 }
 
-.carousel-slide-one {
+.card h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    font-family: "Roboto Slab", serif;
+}
+
+/** Information */
+
+main hr {
+    border: none;
+    background-color: #e94560;
+    width: 3vw;
+    height: 0.5vh;
+    margin: 0px auto;
+}
+
+main h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.skills > section, .accomplishments > section {
+    background-color: white;
+    width: 80vw;
+    margin: 40px auto;
+    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.75);
+    color: black;
+    height: 35vh;
     display: flex;
-    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.skills > section h3, .accomplishments > section h3 {
+    font-size: 1.5rem;
+    margin-top: 25px;
+}
+
+/* Programming */
+.skills > section.programming {
+    height: 50vh;
+    width: 60vw;
+}
+
+.programming .carousel {
+    width: 150px;
+    margin: 25px auto;
+}
+
+.programming .carousel-slide {
     width: 100%;
+    height: 150px;
+    display: flex;
 }
 
-.carousel-one img {
-    filter: grayscale(100%);
+.programming .carousel-slide img {
+    width: 150px;
+    filter: grayscale(100%)
 }
 
+.programming h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.circle-container {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.programming .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    opacity: 0.3;
+    background-color: black;
+    animation: opacity-changer 16s linear var(--i) infinite;
+}
+
+@keyframes opacity-changer {
+    0% {
+        opacity: 0.3;
+    } 3.25% {
+        opacity: 1;
+    } 9.25% {
+        opacity: 1;
+    } 12.5% {
+        opacity: 0.3;
+    } 100% {
+        opacity: 0.3;
+    }
+}
+
+/* Math */
+.skills > section.math {
+    width: 60vw;
+    height: 95vh;
+}
+
+.math .diamond-grid {
+    display: grid;
+    height: 80%;
+    width: 80%;
+    grid-template: repeat(5, 1fr) / repeat(6, 1fr);
+    gap: 10px 15px;
+    margin: 25px auto;
+}
+.diamond-grid > div {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    filter: grayscale(50%)
+}
+.diamond-grid > div:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.6);
+    filter: none;
+}
+
+.statistics {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1;
+    background: url("https://media.discordapp.net/attachments/768855517648912406/791396265141075978/statistics.jpg") no-repeat top center / cover;
+}
+.geometry {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    background: url("https://cdn.discordapp.com/attachments/768855517648912406/791397632513802256/geometry.jpg") no-repeat top center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.geometry h4 {
+    color: rgb(175, 175, 175);
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px black;
+}
+.trigonometry {
+    grid-column: 4 / span 2;
+    grid-row: 2 / span 1;
+    background: url("https://media.discordapp.net/attachments/768855517648912406/791399775404556309/statistics_1.jpg") no-repeat top center / cover;
+}
+.calculusab {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    background: url("https://cdn.discordapp.com/attachments/768855517648912406/791431606002647040/calculus_1.png") no-repeat top center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculusab h4 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px black;
+}
+.precalc {
+    grid-column:  3 / span 2;
+    grid-row: 3 / span 1;
+    background: url("https://media.discordapp.net/attachments/768855517648912406/791465403011956746/precalc.jpg") no-repeat top center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.precalc h4 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px black;
+}
+.calculusbc {
+    grid-column: 5 / span 2;
+    grid-row: 3 / span 1;
+    background: url("https://media.discordapp.net/attachments/768855517648912406/791473742794326046/calculus_2.jpg") no-repeat top center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculusbc h4 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px black;
+}
+.algebra1 {
+    grid-column: 2 / span 2;
+    grid-row: 4 / span 1;
+    background: url("https://media.discordapp.net/attachments/768855517648912406/791475611271954482/algebra_1.jpg") no-repeat top center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.algebra1 h4 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px black;
+}
+.algebra2 {
+    grid-column: 4 / span 2;
+    grid-row: 4 / span 1;
+    background: url("https://media.discordapp.net/attachments/768855517648912406/791476130283913256/algebra_2.jpg") no-repeat top center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.algebra2 h4 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px black;
+}
+.arithmetic {
+    grid-column: 3 / span 2;
+    grid-row: 5 / span 1;
+    background: url("https://media.discordapp.net/attachments/768855517648912406/791477147374059540/arithmetic.png") no-repeat top center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arithmetic h4 {
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px black;
+}
 /*********************/
 /* Section 4: Footer */
 /*********************/
