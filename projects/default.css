@@ -1,0 +1,32 @@
+/**********************/
+/* Section 1: Banner */
+/*********************/
+.banner {
+    width: 100vw;
+    height: 70vh;
+    background: url("https://cdn.discordapp.com/attachments/768855517648912406/792509114940653568/88394bbdd649a12031722a4d9e183b64.png") no-repeat top center / cover;
+    filter: blur(1px)
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70vh;
+    background-color: #1a1a2ea6;
+    z-index: 1;
+}
+
+.title {
+    width:100vw;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 2;
+}
