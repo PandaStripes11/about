@@ -69,17 +69,18 @@
     background-color: #1a1a2e;
     margin: 0px auto;
     position: relative;
-    bottom: 5px;
+    bottom: 15px;
 }
 
 .content div div h3 {
     color: white;
     font-weight: 400;
     text-shadow: 2px 2px black;
+    font-size: 1.75rem;
 }
 
 .school a > div:hover, .other a > div:hover {
-    box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 6px 5px 2px rgba(0, 0, 0, 0.6);
 }
 
 /** School **/
@@ -89,7 +90,7 @@
     border-radius: 15px;
     transition: all 0.25s ease;
     margin: 15px 10px;
-    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.6);
     position: absolute;
     transition: all 0.25s ease;
     display: flex;
@@ -125,7 +126,7 @@
     border-radius: 15px;
     transition: all 0.25s ease;
     margin: 15px 10px;
-    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.6);
     position: absolute;
     transition: all 0.25s ease;
     display: flex;
@@ -252,7 +253,17 @@
 }
 .this-website {
     transform: translateY(150%) translateX(10%);
+    background: url("https://media.discordapp.net/attachments/768855517648912406/793005378044297247/2Q.png") no-repeat top center / cover;
+}
+.content div .this-website h3 {
+    position: relative;
+    bottom: 35px;
+    left: 10px;
 }
 .grade-calculator {
-    transform: translateX(-50%) translateY(300%)
+    transform: translateX(-50%) translateY(300%);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://media.discordapp.net/attachments/768855517648912406/793006532865556490/9k.png") no-repeat top center / cover;
+}
+.content div .grade-calculator h3 {
+    font-weight: 500;
 }
