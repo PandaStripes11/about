@@ -30,3 +30,14 @@
     color: white;
     z-index: 2;
 }
+.title h1 {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+/*******************/
+/* Section 2: Main */
+/*******************/
+main {
+    color: black;
+}

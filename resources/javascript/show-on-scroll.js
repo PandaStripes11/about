@@ -2,11 +2,13 @@ const upElements = document.querySelectorAll(".up")
 const downElements = document.querySelectorAll(".down")
 const rightElements = document.querySelectorAll(".right")
 const leftElements = document.querySelectorAll(".left")
+const stillElements = document.querySelectorAll(".still")
 
 const oneTimeDownElements = document.querySelectorAll(".once-down")
 const oneTimeUpElements = document.querySelectorAll(".once-up")
 const oneTimeLeftElements = document.querySelectorAll(".once-left")
 const oneTimeRightElements = document.querySelectorAll(".once-right")
+const oneTimeStillElements = document.querySelectorAll(".once-still")
 
 const scroll = window.requestAnimationFrame || function(callback){ window.setTimeout(callback, 1000/60)};
 
@@ -40,11 +42,13 @@ window.addEventListener("load", () => {
     loop(downElements, "float-down")
     loop(rightElements, "from-right")
     loop(leftElements, "from-left")
+    loop(stillElements, "still-appear")
 
     oneLoop(oneTimeDownElements, "float-down")
     oneLoop(oneTimeUpElements, "float-up")
     oneLoop(oneTimeLeftElements, "from-left")
     oneLoop(oneTimeRightElements, "from-right")
+    oneLoop(oneTimeStillElements, "still-appear")
   }, 750)
   
 })
@@ -53,9 +57,11 @@ window.addEventListener("scroll", () => {
   loop(downElements, "float-down")
   loop(rightElements, "from-right")
   loop(leftElements, "from-left")
+  loop(stillElements, "still-appear")
   
   oneLoop(oneTimeDownElements, "float-down")
   oneLoop(oneTimeUpElements, "float-up")
   oneLoop(oneTimeLeftElements, "from-left")
   oneLoop(oneTimeRightElements, "from-right")
+  oneLoop(oneTimeStillElements, "still-appear")
 })
