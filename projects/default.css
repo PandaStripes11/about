@@ -5,7 +5,8 @@
     width: 100vw;
     height: 70vh;
     background: url("https://cdn.discordapp.com/attachments/768855517648912406/792509114940653568/88394bbdd649a12031722a4d9e183b64.png") no-repeat top center / cover;
-    filter: blur(1px)
+    filter: blur(1px);
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.6)
 }
 
 .overlay {
@@ -32,7 +33,7 @@
 }
 .title h1 {
     font-size: 4rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 /*******************/
@@ -41,3 +42,119 @@
 main {
     color: black;
 }
+
+.content {
+    margin-left: 10vw;
+}
+.content > section:not(.links):not(.learned) {
+    margin: 50px 0px;
+    width: 45vw;
+}
+.content h2 {
+    font-weight: 600;
+}
+
+/** Learned Skills */
+.learned {
+    width: 85vw;
+    margin: 50px 0px;
+}
+
+.content.learned ul {
+    list-style-type: none;
+}
+.content .learned li {
+    display: inline-block;
+}
+.learned li h3 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+a {
+    position: relative;
+}
+a[alt]:hover::after {
+    content: attr(alt);
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+
+.content .learned img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    margin: 0px 15px;
+    position: relative;
+}
+
+/** Links */
+.links {
+    width: 80vw;
+    margin: 50px 0px;
+}
+
+.links ul {
+    list-style-type: none;
+}
+.links li {
+    display: inline-block;
+}
+
+@keyframes sheen {
+    0% {
+        background-color: #2194e0;
+        transform: skewY(-45deg) translateX(0);
+    }
+    100% {
+        background-color: #2194e0;
+        transform: skewY(-45deg) translateX(22.5em);
+    }
+}
+.wrapper {
+    display: inline-block;
+}
+.button {
+    padding: 0.75em 2em;
+    text-align: center;
+    text-decoration: none;
+    background-color: #58a9df23;
+    color: #2194E0;
+    border: 2px solid #2194E0;
+    font-size: 24px;
+    display: inline-block;
+    border-radius: 0.3em;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+.button::before {
+    content: "";
+    background-color: rgba(255,255,255,0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    transform: skewX(-45deg) translateX(0);
+    transition: none;
+}
+.button:hover {
+    background-color: #2194E0;
+    color: #fff;
+    border-bottom: 10px solid darken(#2194E0, 20%);
+}
+.button:hover::before {
+    transform: skewX(-45deg) translateX(17.5em);
+    transition: all 0.5s ease-out;
+}
+
+.button:active {
+    top: 5px;
+}
+
