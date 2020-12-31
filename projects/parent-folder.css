@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+/*******************/
+/* Section 1: Main */
+/*******************/
+main {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, #141e30, #243b55);
+    text-align: center;
+}
+
+main h1 {
+    position: relative;
+    top: 40vh;
+    font-size: 4rem;
+    font-weight: 700;
+}
+main p {
+    position: relative;
+    top: 41vh;
+}
+
+main ul {
+    position: relative;
+    top: 45vh;
+}
+main li {
+    display: inline-block;
+}
+
+button {
+  border-radius: 4px;
+  background: linear-gradient(to right, #67b26b99, #4ca2cb99);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 5px;
+  overflow: hidden;
+  position: relative;
+  outline: none;
+}
+
+button::before {
+    padding: inherit;
+    content: "▶";
+    display: inline-block;
+    width: 500px;
+    height: inherit;
+    background: linear-gradient(to right, #67b26b66, #4ca2cb66);
+    position: absolute;
+    top: 0;
+    right: 300px;
+    transition: all 0.25s ease-out;
+}
+
+button:hover::before {
+    right: 0px;
+}
