@@ -163,7 +163,7 @@
     width: 30%;
     bottom: 0;
     left: 50px;
-    transform: translateY(15px);
+    transform: translateY(20px);
     transition: all 0.5s ease;
     animation: wumpus 5s linear 0s infinite;
 }
@@ -177,13 +177,13 @@
     0% {
         transform: translateY(110%);
     }20% {
-        transform: translateY(-1%);
+        transform: translateY(10px);
     }30% {
-        transform: translateY(15px);
+        transform: translateY(20px);
     }70% {
-        transform: translateY(15px);
+        transform: translateY(20px);
     }80% {
-        transform: translateY(-1%);
+        transform: translateY(10px);
     }100% {
         transform: translateY(110%);
     }
