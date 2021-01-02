@@ -27,7 +27,7 @@ main p {
 main ul {
     position: absolute;
     bottom: 5vh;
-    left: calc((100vh - 300px))
+    left: calc(100vh - 150px * (var(--list-length)))
 }
 main li {
     display: inline-block;
