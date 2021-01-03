@@ -100,12 +100,12 @@
 }
 
 .stem {
-    transform: translateX(-50%) scale(1.2);
+    transform: translateX(-50%);
     background: url("https://media.discordapp.net/attachments/768855517648912406/792929339960066078/Z.png") no-repeat top center / cover;
 }
 .ela {
     transform: translateX(-110%) translateY(125%);
-    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("https://media.discordapp.net/attachments/768855517648912406/792940288121110528/ela.jpg") no-repeat top center / cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.10)), url("https://cdn.discordapp.com/attachments/768855517648912406/795423696042721300/9k.png") no-repeat top center / cover;
 }
 .content div .ela h3 {
     font-weight: 600;
@@ -113,7 +113,7 @@
 }
 .humanities {
     transform: translateY(125%) translateX(10%);
-    background: url("https://cdn.discordapp.com/attachments/768855517648912406/792938019467821096/Z.png") no-repeat top center / cover;
+    background: url("https://cdn.discordapp.com/attachments/768855517648912406/795424189501931540/2Q.png") no-repeat top center / cover;
 }
 
 /** Other **/
@@ -136,7 +136,7 @@
 }
 
 .discordbots {
-    transform: translateX(-50%) scale(1.2);
+    transform: translateX(-50%);
     background: url("https://cdn.discordapp.com/attachments/768855517648912406/792951152152281128/9k.png") no-repeat top center / cover;
     overflow: hidden;
     position: relative;
@@ -204,6 +204,7 @@
     color: lightgray;
     font-family: Yellowtail;
     font-size: 2em;
+    opacity: 0.5;
 }
 #one {
     top: 5px;
@@ -243,9 +244,9 @@
     0% {
         opacity: 0;
     } 8.5% {
-        opacity: 1;
+        opacity: 0.5;
     } 10.5% {
-        opacity: 1;
+        opacity: 0.5;
     } 19% {
         opacity: 0
     } 100% {
