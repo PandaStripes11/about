@@ -390,4 +390,15 @@ footer p {
     }
 }
 
+@media only screen and (max-height: 600px) {
+    footer {
+        height: 50vh;
+    }
+}
+@media only screen and (max-height: 500px) {
+    footer {
+        height: 60vh;
+    }
+}
+
 
