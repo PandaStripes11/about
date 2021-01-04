@@ -304,14 +304,6 @@ footer li {
     right: 69.5vw;
 }
 
-footer p {
-    position: absolute;
-    bottom: -34vh;
-    left: 8px;
-    float: left;
-    font-size: 0.65rem;
-}
-
 /**************/
 /* Responsive */
 /**************/
@@ -397,7 +389,7 @@ footer p {
 }
 @media only screen and (max-height: 500px) {
     footer {
-        height: 60vh;
+        height: 350px;
     }
 }
 
