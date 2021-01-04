@@ -624,3 +624,87 @@ footer p {
     float: left;
     font-size: 0.65rem;
 }
+
+/**************/
+/* Responsive */
+/**************/
+@media only screen and (max-width: 1200px) {
+    .cont > section {
+        width: 800px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .cont > section {
+        width: 750px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .animation {
+        width: 100px;
+    }
+    .circle.blue {
+        display: none;
+    }
+    .cont > section {
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .cont > section {
+        width: 500px
+    }
+}
+@media only screen and (max-width: 550px) {
+    .cont > section {
+        width: 450px;
+    }
+    .animation {
+        width: 75px;
+        right: 50px;
+    }
+}
+@media only screen and (max-height: 600px) {
+    .banner, .overlay {
+        height: 60vh;
+    }
+    .title {
+        top: 30vh;
+    }
+    .content {
+        height: 180vh;
+    }
+    .cont > section {
+        height: 50vh;
+    }
+    .toc {
+        height: 35vh;
+    }
+    .animation {
+        width: 75px;
+        height: 100px;
+        right: 75px;
+    }
+    .circle.blue {
+        display: none;
+    }
+}
+@media only screen and (max-height: 450px) {
+    .banner, .overlay {
+        height: 70vh;
+    }
+    .title {
+        top: 35vh;
+    }
+    .toc {
+        height: 40vh;
+    }
+    .content {
+        height: 215vh;
+    }
+    .cont > section {
+        height: 65vh;
+    }
+    .bars {
+        height: 100px
+    }
+}
