@@ -405,19 +405,7 @@ footer li {
     right: 69.5vw;
 }
 
-footer p {
-    position: absolute;
-    left: 8px;
-    float: left;
-    font-size: 0.65rem;
-}
-
 /**************/
 /* Responsive */
 /**************/
-@media only screen and (max-width: 1200px) {
-    footer p {
-        display: none;
-    }
-}
 

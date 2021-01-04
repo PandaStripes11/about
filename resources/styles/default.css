@@ -317,11 +317,14 @@ footer p {
 /**************/
 @media only screen and (max-width: 1000px) {
     html {
-        font-size: 12px;
+        font-size: 14px;
     }
     .menu {
-        width: 50vw;
-        right: -100%;
+        width: 40vw;
+        right: -50vw;
+    }
+    .menu li {
+        font-size: 1.25rem;
     }
     .menu hr {
         width: 45vw;
@@ -345,6 +348,18 @@ footer p {
 }
 
 @media only screen and (max-width: 750px) {
+    html {
+        font-size: 12px;
+    }
+    .menu {
+        width: 50vw;
+        right: -50vw;
+    }
+    .menu li {
+        width: 45vw;
+        margin: 10px;
+        font-size: 1.25rem;
+    }
     nav li {
         margin: 10px;
     }
@@ -361,9 +376,17 @@ footer p {
         display: none;
     }
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 575px) {
     .main-links li {
         margin: 5px;
+    }
+    .menu {
+        width: 75vw;
+        right: -75vw;
+    }
+    .menu li {
+        width: 65vw;
+        font-size: 1.25rem;
     }
 }
 
