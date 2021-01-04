@@ -609,6 +609,10 @@ main h2 {
 }
 
 /** Accomplishments */
+.accomplishments > section {
+    position: relative;
+}
+
 .accomplishments .carousel-slide {
     display: flex;
     width: 100%;
@@ -639,7 +643,7 @@ main h2 {
 }
 
 .accomplishments .carousel-slide {
-    height: 150px;
+    height: 175px;
 }
 
 .accomplishments .carousel-slide img {

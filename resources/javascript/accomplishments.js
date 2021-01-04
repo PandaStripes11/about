@@ -98,6 +98,52 @@ programmingCarousel.addEventListener("carouselend", () => {
     programmingCounter++;
 })
 
+/* Accomplishments Items */
+const achievements = document.querySelectorAll(".accomplishments > section h4")
+const psia = achievements[0]
+const mathfax = achievements[1]
+const quizBowl = achievements[2]
+const rmta = achievements[3]
+
+let psiaIterator = 0;
+function psiaChanger() {
+    const psiaArr = ['2nd Grade: Math 1st Place District', '3rd Grade: Math 1st Place District', '4th Grade: Number Sense 1st Place District', '5th Grade: Math and Science 1st Place District', '6th Grade: Number Sense and Math 2nd Place State']
+    setTimeout(function() {
+        psia.innerHTML = psiaArr[psiaIterator % psiaArr.length]
+        psiaIterator++;
+        if (psiaIterator > -1) {
+            psiaChanger()
+        }
+    }, 2500)
+}
+psiaChanger()
+
+let mathfaxIterator = 0;
+function mathfaxChanger() {
+    const mathfaxArr = ['3rd Grade: 1st Place National', '4th Grade: 1st Place State', '5th Grade: 1st Place National', '6th Grade: 1st Place School']
+    setTimeout(function() {
+        mathfax.innerHTML = mathfaxArr[mathfaxIterator % mathfaxArr.length]
+        mathfaxIterator++;
+        if (mathfaxIterator > -1) {
+            mathfaxChanger()
+        }
+    }, 2000)
+}
+mathfaxChanger()
+
+let rmtaIterator = 0;
+function rmtaChanger() {
+    const rmtaArr = ['3 Time Fall Festival Perfect Score', '2 Time Jazz Competition Winner', '3 Time Winter Festival Perfect Score']
+    setTimeout(function() {
+        rmta.innerHTML = rmtaArr[rmtaIterator % rmtaArr.length]
+        rmtaIterator++;
+        if (rmtaIterator > -1) {
+            rmtaChanger()
+        }
+    }, 3000)
+}
+rmtaChanger()
+
 
 
 
