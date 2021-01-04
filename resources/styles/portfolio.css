@@ -269,3 +269,26 @@
 .content div .grade-calculator h3 {
     font-weight: 500;
 }
+
+/**************/
+/* Responsive */
+/**************/
+@media only screen and (max-width: 900px) {
+    .content > .other {
+        height: 125vh;
+    }
+    .school a > div, .other a > div {
+        width: 35vw;
+    }
+}
+@media only screen and (max-height: 400px) {
+    .content > div {
+        height: 120vh;
+    }
+    .content > .other {
+        height: 175vh;
+    }
+    .school a > div, .other a > div {
+        height: 30vh;
+    }
+}

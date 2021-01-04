@@ -408,4 +408,13 @@ footer li {
 /**************/
 /* Responsive */
 /**************/
-
+@media only screen and (max-height: 650px) {
+    .text {
+        bottom: 50px;
+    }
+}
+@media only screen and (max-height: 500px) {
+    .text {
+        bottom: -50px;
+    }
+}

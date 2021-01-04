@@ -358,6 +358,9 @@ footer li {
     footer .footer-container {
         width: 50%;
     }
+    footer ul {
+        list-style-type: disc;
+    }
     .github {
         display: none;
     }
