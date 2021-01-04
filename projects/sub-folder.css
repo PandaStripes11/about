@@ -33,10 +33,6 @@ main li {
     display: inline-block;
 }
 
-main a:hover {
-    cursor: pointer;
-}
-
 button {
   border-radius: 4px;
   background: #67b26b;
