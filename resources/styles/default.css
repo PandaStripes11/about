@@ -372,8 +372,11 @@ footer li {
     }
 }
 @media only screen and (max-width: 575px) {
+    footer .footer-container {
+        width: 70%;
+    }
     .main-links li {
-        margin: 5px;
+        display: none;
     }
     .menu {
         width: 75vw;
@@ -384,7 +387,11 @@ footer li {
         font-size: 1.25rem;
     }
 }
-
+@media only screen and (max-height: 850px) and (max-width: 450px) and (orientation: portrait) {
+    header {
+        height: 15vh;
+    }
+}
 @media only screen and (max-height: 600px) {
     footer {
         height: 50vh;

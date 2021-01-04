@@ -273,12 +273,12 @@
 /**************/
 /* Responsive */
 /**************/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
     .content > .other {
         height: 125vh;
     }
     .school a > div, .other a > div {
-        width: 35vw;
+        width: 200px;
     }
 }
 @media only screen and (max-height: 400px) {
