@@ -269,6 +269,7 @@ body.active .menu {
     width: 175px;
     height: 175px;
     border-radius: 100%;
+    border: 2px solid white;
 }
 
 .title {
