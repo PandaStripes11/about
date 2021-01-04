@@ -246,6 +246,7 @@ body.active .menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .overlay {
     position: absolute;
@@ -266,10 +267,33 @@ body.active .menu {
     text-align: center;
 }
 .title h1 {
+    --color: rgb(90, 90, 90);
+    --blur: 0px;
     font-size: 3.5rem;
     font-weight: 900;
     font-family: "Roboto Slab", serif;
     position: relative;
+    text-shadow:
+                 5px 5px var(--blur) var(--color),
+                 4px 4px var(--blur) var(--color),
+                 3px 3px var(--blur) var(--color),
+                 2px 2px var(--blur) var(--color),
+                 1px 1px var(--blur) var(--color);
+    transition: all 0.2s ease-out;
+}
+.title h1:hover {
+    text-shadow: 
+                 8px 8px var(--blur) var(--color),
+                 7px 7px var(--blur) var(--color),
+                 6px 6px var(--blur) var(--color),
+                 5px 5px var(--blur) var(--color),
+                 4px 4px var(--blur) var(--color),
+                 3px 3px var(--blur) var(--color),
+                 2px 2px var(--blur) var(--color),
+                 1px 1px var(--blur) var(--color);
+}
+#first-span {
+    font-size: 4rem;
 }
 .title p {
     position: relative;
@@ -438,7 +462,18 @@ body.active .menu {
 }
 .cont > section h3 {
     font-weight: 700;
-    font-size: 2rem
+    font-size: 2rem;
+    text-shadow: 3px 3px 0px rgb(92, 92, 92),
+                 2px 2px 0px rgb(92, 92, 92),
+                 1px 1px 0px rgb(92, 92, 92);
+    transition: all 0.2s ease-out;
+}
+.cont > seciton h3:hover {
+    text-shadow: 5px 5px 0px rgb(92, 92, 92),
+                 4px 4px 0px rgb(92, 92, 92),
+                 3px 3px 0px rgb(92, 92, 92),
+                 2px 2px 0px rgb(92, 92, 92),
+                 1px 1px 0px rgb(92, 92, 92);
 }
 .cont > section p {
     font-family: "Roboto Slab"
@@ -457,7 +492,7 @@ body.active .menu {
 }
 
 .overview-image {
-    background: url("https://media.discordapp.net/attachments/768855517648912406/788976604712796211/8YnAAAAAElFTkSuQmCC.png") no-repeat top center / cover;
+    background: url("https://cdn.discordapp.com/attachments/768855517648912406/795455413554249758/unknown.png") no-repeat top center / cover;
     width: 50%;
     height: 100%;
     float: right;
