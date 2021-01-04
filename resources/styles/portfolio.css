@@ -78,6 +78,9 @@
     font-weight: 400;
     text-shadow: 2px 2px black;
     font-size: 1.75rem;
+    padding: 1px 4px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border: 1px solid white;
 }
 
 .school a > div:hover, .other a > div:hover {
